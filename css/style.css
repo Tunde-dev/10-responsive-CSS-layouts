@@ -13,6 +13,7 @@ body {
 
 .menu li {
   list-style: none;
+  margin: 20px;
 }
 
 .menu a {
@@ -23,11 +24,28 @@ body {
   border-radius: 50px;
 }
 
-.parent {
+.example-1 .parent {
   background-color: aqua;
   display: -ms-grid;
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.example-2 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 25%) 1fr;
+      grid-template-columns: minmax(150px, 25%) 1fr;
+  /**/
+  height: 100vh;
+}
+
+.example-2 .parent .sidebar {
+  background-color: #e2e28f;
+}
+
+.example-2 .parent .section {
+  background-color: plum;
 }
 /*# sourceMappingURL=style.css.map */

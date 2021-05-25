@@ -9,7 +9,8 @@ body {
   height: 100vh;
 
   li {
-   list-style: none;
+    list-style: none;
+    margin: 20px;
   }
 
   a {
@@ -21,9 +22,26 @@ body {
   }
 }
 
-.parent {
+.example-1 .parent {
   background-color: aqua;
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.example-2 {
+
+  .parent {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr; /**/
+    height: 100vh;
+
+    .sidebar {
+      background-color: rgb(226, 226, 143);
+    }
+
+    .section {
+      background-color: plum;
+    }
+  }
 }
