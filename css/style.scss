@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(218, 251, 247);
+}
+.menu {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  li {
+   list-style: none;
+  }
+
+  a {
+    padding: 10px 30px;
+    background-color: darkturquoise;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+  }
+}
+
+.parent {
+  background-color: aqua;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

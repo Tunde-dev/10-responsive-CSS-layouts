@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dafbf7;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  padding: 10px 30px;
+  background-color: darkturquoise;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.parent {
+  background-color: aqua;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
