@@ -38,7 +38,6 @@ body {
   -ms-grid-columns: minmax(150px, 25%) 1fr;
       grid-template-columns: minmax(150px, 25%) 1fr;
   /**/
-  height: 100vh;
 }
 
 .example-2 .parent .sidebar {
@@ -47,5 +46,28 @@ body {
 
 .example-2 .parent .section {
   background-color: plum;
+}
+
+.example-3 .parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.example-3 .header-section {
+  background-color: greenyellow;
+  padding: 20px;
+}
+
+.example-3 .main-section {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.example-3 .footer-section {
+  background-color: lightcoral;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -34,7 +34,6 @@ body {
   .parent {
     display: grid;
     grid-template-columns: minmax(150px, 25%) 1fr; /**/
-    height: 100vh;
 
     .sidebar {
       background-color: rgb(226, 226, 143);
@@ -43,5 +42,26 @@ body {
     .section {
       background-color: plum;
     }
+  }
+}
+
+.example-3 {
+  .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    
+  }
+  .header-section {
+    background-color: greenyellow;
+    padding: 20px;
+  }
+  .main-section {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  .footer-section {
+    background-color: lightcoral;
+    padding: 20px;
   }
 }
