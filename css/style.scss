@@ -21,6 +21,30 @@ body {
     border-radius: 50px;
   }
 }
+
+.pink {
+  background-color: pink;
+}
+.purple {
+  background-color: rgb(209, 177, 209);
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+.white {
+  background-color: white;
+}
+.coral {
+  background-color: rgb(253, 195, 172);
+}
+.yellow {
+  background-color: lightyellow;
+}
+
+
 .parent {
   height: 100vh;
 }
@@ -51,15 +75,12 @@ body {
     grid-template-rows: auto 1fr auto;
   }
   .header-section {
-    background-color: greenyellow;
     padding: 20px;
   }
   .main-section {
-    background-color: lightblue;
     padding: 20px;
   }
   .footer-section {
-    background-color: lightcoral;
     padding: 20px;
   }
 }
@@ -70,26 +91,25 @@ body {
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
     height: 100vh;
-    header {
+
+    .section {
       padding: 2rem;
+    }
+    
+    header {
       grid-column: 1 / 4;
-      background-color: pink;
     }
     .left-side {
       grid-column: 1 / 2;
-      background-color: rgb(181, 181, 250);
     }
     main {
       grid-column: 2 / 3;
-      background-color: rgb(246, 170, 143);
     }
     .right-side {
       grid-column: 3 / 4;
-      background-color: rgb(251, 251, 104);
     }
     footer {
       grid-column: 1 / 4;
-      background-color: rgb(101, 224, 101);
     }
   }
 }
@@ -98,23 +118,18 @@ body {
   .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    background-color: white;
 
     .section-12 {
       grid-column: 1 / span 12;
-      background-color: rgb(97, 155, 97);
     }
     .section-6 {
       grid-column: 1 / span 6;
-      background-color: coral;
     }
     .section-4 {
       grid-column: 4 / span 4;
-      background-color: lightblue;
     }
     .section-2 {
       grid-column: 3 / span 2;
-      background-color: rgb(250, 250, 141);
     }
     .section {
       display: grid;
@@ -124,3 +139,40 @@ body {
   }
 }
 
+.example-6 {
+  .parent {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    .box {
+      padding: 1rem;
+    }
+  }
+}
+
+.example-7 {
+  .parent {
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+
+    .visual {
+      height: 100px;
+      width: 100%;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      justify-content: space-between;
+    }
+
+    h3 {
+      margin: 0
+    }
+  }
+}

@@ -24,6 +24,34 @@ body {
   border-radius: 50px;
 }
 
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: #d1b1d1;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.white {
+  background-color: white;
+}
+
+.coral {
+  background-color: #fdc3ac;
+}
+
+.yellow {
+  background-color: lightyellow;
+}
+
 .parent {
   height: 100vh;
 }
@@ -59,17 +87,14 @@ body {
 }
 
 .example-3 .header-section {
-  background-color: greenyellow;
   padding: 20px;
 }
 
 .example-3 .main-section {
-  background-color: lightblue;
   padding: 20px;
 }
 
 .example-3 .footer-section {
-  background-color: lightcoral;
   padding: 20px;
 }
 
@@ -82,40 +107,38 @@ body {
   height: 100vh;
 }
 
-.example-4 .parent header {
+.example-4 .parent .section {
   padding: 2rem;
+}
+
+.example-4 .parent header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
-  background-color: pink;
 }
 
 .example-4 .parent .left-side {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  background-color: #b5b5fa;
 }
 
 .example-4 .parent main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  background-color: #f6aa8f;
 }
 
 .example-4 .parent .right-side {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
-  background-color: #fbfb68;
 }
 
 .example-4 .parent footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
-  background-color: #65e065;
 }
 
 .example-5 .parent {
@@ -123,35 +146,30 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  background-color: white;
 }
 
 .example-5 .parent .section-12 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1 / span 12;
-  background-color: #619b61;
 }
 
 .example-5 .parent .section-6 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-column: 1 / span 6;
-  background-color: coral;
 }
 
 .example-5 .parent .section-4 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 4;
   grid-column: 4 / span 4;
-  background-color: lightblue;
 }
 
 .example-5 .parent .section-2 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
-  background-color: #fafa8d;
 }
 
 .example-5 .parent .section {
@@ -159,5 +177,50 @@ body {
   display: grid;
   place-items: center;
   text-align: center;
+}
+
+.example-6 .parent {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.example-6 .parent .box {
+  padding: 1rem;
+}
+
+.example-7 .parent {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+.example-7 .parent .visual {
+  height: 100px;
+  width: 100%;
+}
+
+.example-7 .parent .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.example-7 .parent h3 {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
