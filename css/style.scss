@@ -176,3 +176,22 @@ body {
     }
   }
 }
+
+.example-8 {
+  .parent {
+    display: grid;
+    place-items: center;
+
+    .card {
+      width: clamp(23ch, 50%, 46ch);
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .visual {
+      height: 150px;
+      width: 100%
+    }
+  }
+}
