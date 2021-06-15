@@ -246,4 +246,25 @@ body {
   height: 150px;
   width: 100%;
 }
+
+.example-9 .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.example-9 .parent .box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  /*  No stretching: */
+  margin: 5px;
+  padding: 2rem;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
