@@ -21,16 +21,16 @@ body {
     border-radius: 50px;
   }
 }
-
+.parent {
+  height: 100vh;
+}
 .example-1 .parent {
   background-color: aqua;
   display: grid;
   place-items: center;
-  height: 100vh;
 }
 
 .example-2 {
-
   .parent {
     display: grid;
     grid-template-columns: minmax(150px, 25%) 1fr; /**/
@@ -49,8 +49,6 @@ body {
   .parent {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    
   }
   .header-section {
     background-color: greenyellow;
@@ -65,3 +63,64 @@ body {
     padding: 20px;
   }
 }
+
+.example-4 {
+
+  .parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    height: 100vh;
+    header {
+      padding: 2rem;
+      grid-column: 1 / 4;
+      background-color: pink;
+    }
+    .left-side {
+      grid-column: 1 / 2;
+      background-color: rgb(181, 181, 250);
+    }
+    main {
+      grid-column: 2 / 3;
+      background-color: rgb(246, 170, 143);
+    }
+    .right-side {
+      grid-column: 3 / 4;
+      background-color: rgb(251, 251, 104);
+    }
+    footer {
+      grid-column: 1 / 4;
+      background-color: rgb(101, 224, 101);
+    }
+  }
+}
+
+.example-5 {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: white;
+
+    .section-12 {
+      grid-column: 1 / span 12;
+      background-color: rgb(97, 155, 97);
+    }
+    .section-6 {
+      grid-column: 1 / span 6;
+      background-color: coral;
+    }
+    .section-4 {
+      grid-column: 4 / span 4;
+      background-color: lightblue;
+    }
+    .section-2 {
+      grid-column: 3 / span 2;
+      background-color: rgb(250, 250, 141);
+    }
+    .section {
+      display: grid;
+      place-items: center;
+      text-align: center
+    }
+  }
+}
+
